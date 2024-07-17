@@ -4,10 +4,6 @@ import matplotlib.pyplot as plt
 import pandas_datareader as data
 import yfinance as yf
 
-# Authentication
-import streamlit_authenticator as stauth
-
-
 from keras.models import load_model
 import streamlit as st
 
