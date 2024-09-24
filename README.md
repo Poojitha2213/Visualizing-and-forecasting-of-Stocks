@@ -16,38 +16,7 @@ The Stock Trend Prediction mini-project is designed to introduce you to the fund
 
 4. **Trend Prediction**: Implement a basic predictive model using techniques such as linear regression, moving averages, or other time series forecasting methods. This model aims to predict future stock prices based on historical trends.
 
-**Code Structure:**
 
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import pandas_datareader as data
-import yfinance as yf
-
-# Data Retrieval
-stock_symbol = 'AAPL'  # Example stock symbol (can be replaced with any valid symbol)
-start_date = '2020-01-01'  # Define start date for data retrieval
-end_date = '2021-01-01'    # Define end date for data retrieval
-stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
-
-# Data Exploration
-print(stock_data.head())     # Display the first few rows of the data
-print(stock_data.describe()) # Summary statistics of the data
-# Check for missing values and handle them if necessary
-
-# Data Visualization
-plt.figure(figsize=(10, 6))
-plt.plot(stock_data['Close'], label='Close Price', color='blue')
-plt.title('Historical Stock Prices')
-plt.xlabel('Date')
-plt.ylabel('Price')
-plt.legend()
-plt.show()
-
-# Trend Prediction
-# Implement your predictive model here
-```
 
 **Expected Outcome:**
 
